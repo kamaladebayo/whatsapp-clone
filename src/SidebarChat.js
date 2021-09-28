@@ -1,5 +1,5 @@
 import { Avatar } from '@material-ui/core'
-import aby from './assets/images/aby.jpg'
+import chatroomIMG from './assets/images/08.png'
 import './SidebarChat.css'
 
 const SidebarChat = () => {
@@ -7,10 +7,12 @@ const SidebarChat = () => {
         <div className="sidebarChat">
 
             {/* <h2>Sidebar Chat</h2> */}
-            <Avatar/>
+            <span title="Mabel Library">
+                <Avatar src={chatroomIMG}/>
+            </span>
             <div className="sidebarChat__info">
-                <h4>Room name</h4>
-                <p>This is the last message</p>
+                <h4>WTMG!🧏🏿‍♂️</h4>
+                <p>CMP continues...</p>
             </div>
         </div>
      );

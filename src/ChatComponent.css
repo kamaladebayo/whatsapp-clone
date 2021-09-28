@@ -3,6 +3,11 @@
     flex-direction: column;
     flex: 0.65;
 }
+@media(max-width: 900px){
+    .chat{
+      flex: 1;
+    }
+}
 .chat__header{
     /* background: #d3d3d3; */
     display: flex;
@@ -29,6 +34,15 @@
     color: rgb(116, 115, 115);
 }
 
+@media(max-width: 550px){
+    .chat__headerInfo > p{
+        display: none;
+    }
+    .chat__headerRight .MuiIconButton-root{
+        padding: 5px;
+    }
+}
+
 .chat__body{
     flex: 1;
     overflow: auto;
@@ -44,6 +58,7 @@
     background: #FFF;
     padding: 1em;
     border-radius: .5em;
+    max-width: 65%;
     margin-bottom: 2em;
 }
 .chat__receiver{
